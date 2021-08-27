@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Are you sure to buy?"
+        android:textColor="#EC3535"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Name : "
+        android:textColor="#28BD2E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/mName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Price : "
+        android:textColor="#28BD2E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/mPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/mName" />
+
+    <Button
+        android:id="@+id/buyBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="Buy"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mPrice" />
+
+    <Button
+        android:id="@+id/nobuyBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="No"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#E36161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="1"
+        android:textColor="#F11212"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mName"
+        app:layout_constraintTop_toBottomOf="@+id/qadd" />
+
+    <Button
+        android:id="@+id/qadd"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="37dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/qminus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="37dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="-"
+        app:backgroundTint="#E81616"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

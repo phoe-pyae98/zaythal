@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zaynav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.emptycoder.zaythal.HomeFragment"
+        android:label="Zay Thal"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_lookSalelistFragment"
+            app:destination="@id/lookSalelistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/material_listFragment"
+        android:name="com.emptycoder.zaythal.material_listFragment"
+        android:label="Materials"
+        tools:layout="@layout/fragment_material_list">
+        <argument
+            android:name="str"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialFragment"
+        android:name="com.emptycoder.zaythal.materialFragment"
+        android:label="Material Types"
+        tools:layout="@layout/fragment_material">
+        <action
+            android:id="@+id/action_materialFragment_to_material_listFragment"
+            app:destination="@id/material_listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutusFragment"
+        android:name="com.emptycoder.zaythal.aboutusFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_aboutus" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.emptycoder.zaythal.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment"
+            app:popUpTo="@id/updateProfileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.emptycoder.zaythal.developerFragment"
+        android:label="Developers"
+        tools:layout="@layout/fragment_developer" />
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.emptycoder.zaythal.UpdateProfileFragment"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <action
+            android:id="@+id/action_updateProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/profileFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.emptycoder.zaythal.model.Owner" />
+    </fragment>
+    <fragment
+        android:id="@+id/lookSalelistFragment"
+        android:name="com.emptycoder.zaythal.lookSalelistFragment"
+        android:label="SaleLIst"
+        tools:layout="@layout/fragment_look_salelist">
+        <argument
+            android:name="idStr"
+            app:argType="string" />
+    </fragment>
+</navigation>

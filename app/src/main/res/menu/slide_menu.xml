@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="shop details">
+        <menu>
+            <item
+                android:id="@+id/homeFragment"
+                android:title="Sell Lists"
+                android:icon="@drawable/note"
+                />
+            <item
+                android:id="@+id/materialFragment"
+                android:title="Material Types"
+                android:icon="@drawable/clipboard"
+                />
+            <item android:id="@+id/profileFragment"
+                android:title="Profile"
+                android:icon="@drawable/profile"
+                />
+
+        </menu>
+    </item>
+
+    <item android:title="others">
+        <menu>
+            <item
+                android:id="@+id/aboutusFragment"
+                android:title="About us"
+                android:icon="@drawable/about_us"
+                />
+            <item
+                android:id="@+id/developerFragment"
+                android:title="Developers"
+                android:icon="@drawable/developer_icon"
+                />
+
+
+        </menu>
+
+    </item>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#4DC652">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Zay thal"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ucstfreelancers.testing"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/n" />
+</androidx.constraintlayout.widget.ConstraintLayout>
